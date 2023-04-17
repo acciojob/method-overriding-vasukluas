@@ -13,6 +13,7 @@ public class Main {
       return "Method is overridden in Extendend class B";
     }
   }
+
   public static void main(){
     B obj=new B();
    obj.method();
