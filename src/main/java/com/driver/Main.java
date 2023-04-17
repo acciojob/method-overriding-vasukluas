@@ -1,10 +1,21 @@
 package com.driver;
 
+
 public class Main {
-  public static void main(String[] args){
-    B b=new B();
-    String ans=b.method();
-    System.out.println(ans);
+  public static class A{
+    public String method(){
+      return "Invoking method from class A";
+    }
+  }
+  public static class B extends A{
+    @Override
+    public String method(){
+      return "Method is overridden in Extendend class B";
+    }
+  }
+  public static void main(){
+    B obj=new B();
+   obj.method();
   }
 
 }
